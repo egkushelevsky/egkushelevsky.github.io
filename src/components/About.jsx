@@ -1,4 +1,4 @@
-import { FileUser } from "lucide-react"
+import { FileUser, Linkedin } from "lucide-react"
 import ProfileImageUrl from "../assets/images/profile.jpeg";
 
 export const About = () => {
@@ -10,12 +10,19 @@ export const About = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
                 <div>
-                    <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto ">
+                    <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
                     I am a rising junior at Barnard College of Columbia University. I am studying computer science with minors in math
-                    and Russian. I'm primarily interested in systems and security, and I dabble in frontend design. My goal is always 
+                    and Russian. I'm primarily interested in systems and security. My goal is always 
                     to create a positive impact on other people through my work.
+                    <br />
+                    <br />            
+                    For summer 2025, I am an infosec intern at <a 
+                                href="https://www.thehealthcolab.com/" className="hover:italic"
+                                >The Health Co-Lab</a>, a B2B healthcare consulting firm. I am also working as a CS TA at <a 
+                                href="https://cty.jhu.edu/" className="hover:italic">Johns Hopkins CTY</a>.
                     </p>
 
+                    { /*
                     <div className=" py-6 flex items-center justify-center space-x-4 hover:italic">
                             <div className="p-3 rounded-full bg-primary/20 hover:outline hover:outline-1 hover:outline-primary">
                                 <FileUser className="h-6 w-6 text-primary" />
@@ -26,6 +33,21 @@ export const About = () => {
                                 className="font-medium"
                                 >
                                     Resume
+                                </a>
+                            </div>
+                        </div>
+                        */}
+
+                    <div className=" py-6 flex items-center justify-center space-x-4 hover:italic">
+                            <div className="p-3 rounded-full bg-primary/20 hover:outline hover:outline-1 hover:outline-primary">
+                                <Linkedin className="h-6 w-6 text-primary" />
+                            </div>
+                            <div>
+                                <a 
+                                href="www.linkedin.com/in/egkushelevsky" 
+                                className="text-muted-foreground hover:text-primary transition-colors hover:italic"
+                                >
+                                    LinkedIn
                                 </a>
                             </div>
                         </div>

@@ -49,7 +49,7 @@ export const Contact = () => {
                             <div>
                                 <h4 className="font-medium">LinkedIn</h4>
                                 <a 
-                                  href="https://www.linkedin.com/in/egkushelevsky/y"
+                                  href="https://www.linkedin.com/in/egkushelevsky"
                                   className="text-muted-foreground hover:text-primary transition-colors hover:italic">
                                     linkedin.com/in/egkushelevsky
                                 </a>
