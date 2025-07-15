@@ -84,6 +84,40 @@
     background-attachment: fixed;
     font-feature-settings: "rlig" 1, "calt" 1;
     font-family: Stix, serif;
+
+    /* Desktop styles */
+    @media (min-width: 768px) {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    }
+
+    /* Mobile styles */
+    @media (max-width: 767px) {
+      background-size: cover;
+      background-position: center;
+      background-attachment: scroll;
+      position: relative;
+      
+      &::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('/website/images/background.jpg');
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+      }
+    }
+  
+  /* Ensures content can scroll */
+  html {
+    height: 100%;
+    overflow-y: auto;
+  }
   }
 }
 
