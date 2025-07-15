@@ -1,4 +1,5 @@
 import { FileUser } from "lucide-react"
+import ProfileImageUrl from "../assets/images/profile.jpeg";
 
 export const About = () => {
     return <section id="about" className="py-24 px-4 relative">
@@ -30,7 +31,7 @@ export const About = () => {
                         </div>
                     </div>
                 <img 
-                  src="/images/Profile.jpeg"
+                  src= {ProfileImageUrl}
                   alt="Profile Picture"
                   className="w-full max-w-xs mx-auto rounded-lg object-cover shadow-md"
                   >
