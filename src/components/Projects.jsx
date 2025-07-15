@@ -1,18 +1,20 @@
 import { Github, Mail } from "lucide-react";
+import container from '../assets/images/container.png';
+import snap from '../assets/images/snap.png';
 
 const projects = [
     {
         id: 1,
         title: "Zookeeper Container",
         description: "A C program to run a Linux container, including capability and cgroup restrictions, a privatized namespace and file system, and networking abilities.",
-        image: "/images/Container.png",
+        image: container,
         url: ""
     },
     {
         id: 2,
         title: "SNAP for Students",
         description: "Hackathon project addressing food insecurity for college students. Includes a forum with other users, eligibility quiz, and AI chatbot.",
-        image: "/images/SNAP.png",
+        image: snap,
         url: "https://github.com/jaysonedu/devfest2025"
     }
 ];
@@ -53,7 +55,7 @@ export const Projects = () => {
                                         </a>
                                         ) : (
                                         <a
-                                        href="mailto:email@gmail.com"
+                                        href="mailto:egkushelevsky@gmail.com"
                                         className="text-foreground/80 hover:text-primary duration-300"
                                         >
                                             <Mail size={20} />
