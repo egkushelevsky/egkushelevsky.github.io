@@ -39,12 +39,14 @@ export const About = () => {
                         */}
 
                     <div className=" py-6 flex items-center justify-center space-x-4 hover:italic">
+                        <a href="https://www.linkedin.com/in/egkushelevsky">
                             <div className="p-3 rounded-full bg-primary/20 hover:outline hover:outline-1 hover:outline-primary">
                                 <Linkedin className="h-6 w-6 text-primary" />
                             </div>
+                        </a>
                             <div>
                                 <a 
-                                href="www.linkedin.com/in/egkushelevsky" 
+                                href="https://www.linkedin.com/in/egkushelevsky" 
                                 className="text-muted-foreground hover:text-primary transition-colors hover:italic"
                                 >
                                     LinkedIn
