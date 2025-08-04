@@ -12,7 +12,12 @@ const courses = [
     { name: "Fundamentals of Computer Systems", code: "CSEE-W3827", year: 2024, sem: "Fall 2024"},
 
     { name: "Advanced Systems Programming", code: "COMS-W4157", year: 2025, sem: "Spring 2025"},
-    { name: "Machine Learning", code: "COMS-W4771", year: 2025, sem: "Spring 2025"}
+    { name: "Machine Learning", code: "COMS-W4771", year: 2025, sem: "Spring 2025"},
+
+    { name: "Malware Analysis & Reverse Engineering", code: "COMS-W4186", year: 2025, sem: "Fall 2025"},
+    { name: "Security I", code: "COMS-W4181", year: 2025, sem: "Fall 2025"},
+    { name: "Computer Science Theory", code: "COMS-W3261", year: 2025, sem: "Fall 2025"},
+    { name: "Making, Breaking Codes", code: "MATH-UN3025", year: 2025, sem: "Fall 2025"}
 ];
 
 const years = [2025, 2024, 2023];
