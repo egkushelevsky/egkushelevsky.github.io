@@ -22,22 +22,24 @@ export const About = () => {
                                 href="https://cty.jhu.edu/" className="hover:italic">Johns Hopkins CTY</a>.
                     </p>
 
-                    { /*
+                    
                     <div className=" py-6 flex items-center justify-center space-x-4 hover:italic">
+                        <a href="https://drive.google.com/file/d/1syGSPmgL0LuqFkbkaQRX_DRPnNkhvDfX/view?usp=sharing">
                             <div className="p-3 rounded-full bg-primary/20 hover:outline hover:outline-1 hover:outline-primary">
                                 <FileUser className="h-6 w-6 text-primary" />
                             </div>
+                         </a>
                             <div>
                                 <a 
-                                href="https://drive.google.com/file/d/10guJAL7xieWODyfQJBguyjiuOOiiQOL6/view?usp=drive_link" 
+                                href="https://drive.google.com/file/d/1syGSPmgL0LuqFkbkaQRX_DRPnNkhvDfX/view?usp=sharing" 
                                 className="font-medium"
                                 >
                                     Resume
                                 </a>
                             </div>
-                        </div>
-                        */}
-
+                    </div>
+                        
+                    { /*
                     <div className=" py-6 flex items-center justify-center space-x-4 hover:italic">
                         <a href="https://www.linkedin.com/in/egkushelevsky">
                             <div className="p-3 rounded-full bg-primary/20 hover:outline hover:outline-1 hover:outline-primary">
@@ -53,6 +55,7 @@ export const About = () => {
                                 </a>
                             </div>
                         </div>
+                        */}
                     </div>
                 <img 
                   src= {ProfileImageUrl}
