@@ -78,7 +78,7 @@
   body {
     @apply text-foreground transition-colors duration-300 tracking-wide;
     background-image: url('/images/background.jpg');
-    background-size: cover;
+    background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -92,24 +92,25 @@
     background-attachment: fixed;
     }
 
-    /* Mobile styles */
+    /* Mobile fallback */
     @media (max-width: 767px) {
-      background-size: cover;
-      background-position: center;
-      background-attachment: scroll;
-      position: relative;
-      
-      &::before {
+      body {
+        background: none !important; /* remove buggy mobile bg */
+        position: relative;
+      }
+
+      body::before {
         content: '';
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background-image: url('/website/images/background.jpg');
+        background-image: url('/images/background.jpg'); /* same path as desktop */
         background-size: cover;
         background-position: center;
-        z-index: -1;
+        background-repeat: no-repeat;
+        z-index: -1; /* keep it behind everything */
       }
     }
   

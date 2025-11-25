@@ -11,18 +11,20 @@ export const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
                 <div>
                     <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-                    I am a rising junior at Barnard College of Columbia University. I am studying computer science with minors in math
+                    I am a junior at Barnard College of Columbia University. I am studying computer science with minors in math
                     and Russian. I'm primarily interested in systems and security. My goal is always 
                     to create a positive impact on other people through my work.
                     <br />
                     <br />            
-                    For summer 2025, I am an infosec intern at <a 
+                    For summer 2025, I was a security intern at <a 
                                 href="https://www.thehealthcolab.com/" className="hover:italic"
-                                >The Health Co-Lab</a>, a B2B healthcare consulting firm. I am also working as a CS TA at <a 
-                                href="https://cty.jhu.edu/" className="hover:italic">Johns Hopkins CTY</a>.
+                                >The Health Co-Lab</a>, a consulting firm working with community-based healthcare organizations.
+                    This fall, I am a TA for <a href = "https://cs3157.github.io/www/2025-9/" className="hover:italic" >
+                        Advanced Programming
+                        </a>, an introductory systems programming course.
                     </p>
 
-                    
+                    { /*
                     <div className=" py-6 flex items-center justify-center space-x-4 hover:italic">
                         <a href="https://drive.google.com/file/d/1syGSPmgL0LuqFkbkaQRX_DRPnNkhvDfX/view?usp=sharing">
                             <div className="p-3 rounded-full bg-primary/20 hover:outline hover:outline-1 hover:outline-primary">
@@ -38,8 +40,8 @@ export const About = () => {
                                 </a>
                             </div>
                     </div>
-                        
-                    { /*
+                        */}
+                    
                     <div className=" py-6 flex items-center justify-center space-x-4 hover:italic">
                         <a href="https://www.linkedin.com/in/egkushelevsky">
                             <div className="p-3 rounded-full bg-primary/20 hover:outline hover:outline-1 hover:outline-primary">
@@ -55,7 +57,7 @@ export const About = () => {
                                 </a>
                             </div>
                         </div>
-                        */}
+                        
                     </div>
                 <img 
                   src= {ProfileImageUrl}
