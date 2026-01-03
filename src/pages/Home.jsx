@@ -1,8 +1,8 @@
 import { Navbar } from "../components/Navbar";
-import { HeroSection } from "../components/HeroSection";
-import { About } from "../components/About";
-import { Courses } from "../components/Courses";
-import { Projects } from "../components/Projects";
+import { HeroSection } from "../components/Home/HeroSection";
+import { About } from "../components/Home/About";
+import { Courses } from "../components/Home/Courses";
+import { Projects } from "../components/Home/Projects";
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
 
