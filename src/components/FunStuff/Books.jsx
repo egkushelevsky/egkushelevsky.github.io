@@ -1,71 +1,41 @@
-import { FileUser, Linkedin } from "lucide-react"
-import ProfileImageUrl from "../../assets/images/profile.jpeg";
+import dreyersenglish from '../../assets/images/dreyersenglish.jpg';
+
+const books = [
+    { title: "Dreyer's English", author: "Benjamin Dreyer", image: dreyersenglish, completion_year: 2025, completion_month: 12, completion_day: 28, rating: 4.5 }
+];
 
 export const Books = () => {
-    return <section id="about" className="py-24 px-4 relative">
-        {""}
+    return <section id="books" className="py-24 px-4 relative">
         <div className="container mx-auto max-w-5xl">
-            <h2 className="text-3xl font-bold md:text-4xl mb-12 text-center hover:italic">
-                About Me
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
-                <div>
-                    <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-                    I am a junior at Barnard College of Columbia University. I am studying computer science with minors in math
-                    and Russian. I'm primarily interested in systems and security. My goal is always 
-                    to create a positive impact on other people through my work.
-                    <br />
-                    <br />            
-                    For summer 2025, I was a security intern at <a 
-                                href="https://www.thehealthcolab.com/" className="hover:italic"
-                                >The Health Co-Lab</a>, a consulting firm working with community-based healthcare organizations.
-                    For fall2025, I was a TA for <a href = "https://cs3157.github.io/www/2025-9/" className="hover:italic" >
-                        Advanced Programming
-                        </a>, an introductory systems programming course.
-                    </p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-bold text-center hover:italic">Recent Reads</h2>
 
-                    { /*
-                    <div className=" py-6 flex items-center justify-center space-x-4 hover:italic">
-                        <a href="https://drive.google.com/file/d/1syGSPmgL0LuqFkbkaQRX_DRPnNkhvDfX/view?usp=sharing">
-                            <div className="p-3 rounded-full bg-primary/20 hover:outline hover:outline-1 hover:outline-primary">
-                                <FileUser className="h-6 w-6 text-primary" />
-                            </div>
-                         </a>
-                            <div>
-                                <a 
-                                href="https://drive.google.com/file/d/1syGSPmgL0LuqFkbkaQRX_DRPnNkhvDfX/view?usp=sharing" 
-                                className="font-medium"
-                                >
-                                    Resume
-                                </a>
-                            </div>
-                    </div>
-                        */}
-                    
-                    <div className=" py-6 flex items-center justify-center space-x-4 hover:italic">
-                        <a href="https://www.linkedin.com/in/egkushelevsky">
-                            <div className="p-3 rounded-full bg-primary/20 hover:outline hover:outline-1 hover:outline-primary">
-                                <Linkedin className="h-6 w-6 text-primary" />
-                            </div>
-                        </a>
-                            <div>
-                                <a 
-                                href="https://www.linkedin.com/in/egkushelevsky" 
-                                className="text-muted-foreground hover:text-primary transition-colors hover:italic"
-                                >
-                                    LinkedIn
-                                </a>
+            <p className="text-center text-muted-foreground-center mb-12 max-w-2xl mx-auto">
+                An attempt to stick to my 2026 New Year's resolution of one non-academic book a month.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {books.map((book, key) => (
+                    <div key={key} className="group bg-primary/20 outline-1 outline-primary rounded-lg overflow-hidden shadow-xs card-hover">
+                        <div className="h-48 overflow-hidden">
+                            <img src={book.image} alt={book.title} 
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                        </div>
+
+                        <div className="p-6 flex flex-col h-full">
+                            <h3 className="text-xl font-semibold mb-1 hover:italic">
+                                {book.title} by {book.author}
+                            </h3>
+
+                            <p className="test-muted-foreground text-sm mb-4">
+                                Completed {book.completion_month}/{book.completion_day}/{book.completion_year}
+                            </p>
+                            <div className="flex justify-between items-center">
+                                /* add stars here! */
                             </div>
                         </div>
-                        
                     </div>
-                <img 
-                  src= {ProfileImageUrl}
-                  alt="Profile Picture"
-                  className="w-full max-w-xs mx-auto rounded-lg object-cover shadow-md"
-                  >
-                  </img>
+                ))}
             </div>
         </div>
-    </section>
+    </section>;
 }
