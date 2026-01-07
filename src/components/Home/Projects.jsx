@@ -1,6 +1,6 @@
 import { Github, Mail } from "lucide-react";
-import container from '../assets/images/container.png';
-import snap from '../assets/images/snap.png';
+import container from '../../assets/images/container.png';
+import snap from '../../assets/images/snap.png';
 
 const projects = [
     {

@@ -1,5 +1,5 @@
 import { FileUser, Linkedin } from "lucide-react"
-import ProfileImageUrl from "../assets/images/profile.jpeg";
+import ProfileImageUrl from "../../assets/images/profile.jpeg";
 
 export const About = () => {
     return <section id="about" className="py-24 px-4 relative">
