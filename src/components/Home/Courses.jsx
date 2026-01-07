@@ -17,13 +17,16 @@ const courses = [
     { name: "Malware Analysis & Reverse Engineering", code: "COMS-W4186", year: 2025, sem: "Fall 2025"},
     { name: "Security I", code: "COMS-W4181", year: 2025, sem: "Fall 2025"},
     { name: "Computer Science Theory", code: "COMS-W3261", year: 2025, sem: "Fall 2025"},
-    { name: "Making, Breaking Codes", code: "MATH-UN3025", year: 2025, sem: "Fall 2025"}
+    { name: "Making, Breaking Codes", code: "MATH-UN3025", year: 2025, sem: "Fall 2025"},
+
+    { name: "Operating Systems", code: "COMS-W4118", year: 2026, sem: "Spring 2026"},
+    { name: "Machine Learning Security", code: "COMS-W4995", year: 2026, sem: "Spring 2026"}
 ];
 
-const years = [2025, 2024, 2023];
+const years = [2026, 2025, 2024, 2023];
 
 export const Courses = () => {
-    const [activeYear, setActiveYear] = useState(2025);
+    const [activeYear, setActiveYear] = useState(2026);
     const filteredCourses = courses.filter((course) => activeYear === course.year);
     return (
         <section id="courses" className="py-24 px-4 relative bg-secondary/30">
