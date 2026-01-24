@@ -1,11 +1,35 @@
 [
-    {
+  {
+    "title": "The Best American Short Stories 2025",
+    "author": "",
+    "editor": "Celeste Ng",
+    "translator": "",
+    "image": "bass25.jpg",
+    "completion_year": 2026,
+    "completion_month": 1,
+    "completion_day": 16,
+    "rating": 3
+  }, 
+  {
+    "title": "The Woman Destroyed",
+    "author": "Simone de Beauvoir",
+    "editor": "",
+    "translator": "",
+    "image": "womandestroyed.jpeg",
+    "completion_year": 2026,
+    "completion_month": 1,
+    "completion_day": 8,
+    "rating": 3
+  },
+  {
       "title": "Dreyer's English: An Utterly Correct Guide to Clarity and Style",
       "author": "Benjamin Dreyer",
+      "editor": "",
+      "translator": "",
       "image": "dreyersenglish.jpg",
       "completion_year": 2025,
       "completion_month": 12,
       "completion_day": 28,
       "rating": 4.5
-    }
-  ]
+  }
+]

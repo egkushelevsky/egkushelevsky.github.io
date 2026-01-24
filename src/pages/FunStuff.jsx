@@ -1,5 +1,7 @@
 import { Navbar } from "../components/Navbar";
 import { Books } from "../components/FunStuff/Books";
+import { Contact } from "../components/Contact";
+import { Footer } from "../components/Footer";
 
 export const FunStuff = () => {
     return (
@@ -10,6 +12,8 @@ export const FunStuff = () => {
 
         <main>
             <Books />
+            <Contact />
+            <Footer />
         </main>
         </div>
     );
