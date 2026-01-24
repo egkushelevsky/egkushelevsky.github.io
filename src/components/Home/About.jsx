@@ -19,9 +19,11 @@ export const About = () => {
                     For summer 2025, I was a security intern at <a 
                                 href="https://www.thehealthcolab.com/" className="hover:italic"
                                 >The Health Co-Lab</a>, a consulting firm working with community-based healthcare organizations.
-                    For fall2025, I was a TA for <a href = "https://cs3157.github.io/www/2025-9/" className="hover:italic" >
+                    I've also been a TA for two Columbia CS classes: <a href = "https://cs3157.github.io/www/2025-9/" className="hover:italic" >
                         Advanced Programming
-                        </a>, an introductory systems programming course.
+                        </a> and <a href = "https://cs4157.github.io/www/2026-1/" className="hover:italic" >
+                        Advanced Systems Programming
+                        </a>.
                     </p>
 
                     { /*
