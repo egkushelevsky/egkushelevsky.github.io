@@ -30,7 +30,7 @@ const books = booksData.map(book => ({
   
     return (
       <section id="books" className="py-24 px-10 relative mt-[30px]">
-        <div className="container mx-auto max-w-10xl">
+        <div className="min-h-screen flex flex-col items-center w-full overflow-x-hidden">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center hover:italic">
             Recent Reads
           </h2>
@@ -39,7 +39,8 @@ const books = booksData.map(book => ({
             An attempt to stick to my 2026 New Year's resolution of one non-academic book a month.
           </p>
   
-          <div className="flex gap-8 overflow-x-auto pb-6 snap-x snap-mandatory">
+          <div className="relative">
+          <div className="flex gap-8 overflow-x-auto pb-6 snap-x snap-mandatory -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
             {sortedBooks.map((book, key) => (
               <div
                 key={key}
@@ -78,6 +79,7 @@ const books = booksData.map(book => ({
                 </div>
               </div>
             ))}
+          </div>
           </div>
         </div>
 

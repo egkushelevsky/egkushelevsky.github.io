@@ -77,11 +77,11 @@
 
   body {
     @apply text-foreground transition-colors duration-300 tracking-wide;
-    background-image: url('/images/background.jpg');
-    background-size: auto 100%;
+    //background-image: url('/images/background.jpg');
+    //background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    //background-attachment: fixed;
     font-feature-settings: "rlig" 1, "calt" 1;
     font-family: Stix, serif;
 
@@ -90,28 +90,6 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    }
-
-    /* Mobile fallback */
-    @media (max-width: 767px) {
-      body {
-        background: none !important; /* remove buggy mobile bg */
-        position: relative;
-      }
-
-      body::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url('/images/background.jpg'); /* same path as desktop */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        z-index: -1; /* keep it behind everything */
-      }
     }
   
   /* Ensures content can scroll */
@@ -163,6 +141,54 @@
   @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium 
          transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
          hover:scale-105 active:scale-95;
+}
+
+.background-extended {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(var(--background));
+  background-image: url('/images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* Extend into safe areas */
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  
+  /* Negative margins to cover safe areas */
+  margin-top: calc(-1 * env(safe-area-inset-top));
+  margin-bottom: calc(-1 * env(safe-area-inset-bottom));
+  margin-left: calc(-1 * env(safe-area-inset-left));
+  margin-right: calc(-1 * env(safe-area-inset-right));
+  
+  z-index: -1;
+}
+
+.mobile-bg {
+  position: fixed;
+  top: calc(-1 * env(safe-area-inset-top));
+  bottom: calc(-1 * env(safe-area-inset-bottom));
+  left: calc(-1 * env(safe-area-inset-left));
+  right: calc(-1 * env(safe-area-inset-right));
+  width: calc(100% + env(safe-area-inset-left) + env(safe-area-inset-right));
+  height: calc(100% + env(safe-area-inset-top) + env(safe-area-inset-bottom));
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+  pointer-events: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .mobile-bg {
+    display: none;
+  }
 }
 
 #root {
