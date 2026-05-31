@@ -4,6 +4,8 @@ My personal portfolio website. Made with React.js, Tailwind CSS, and Vite. See i
 
 ## TODO
 
-- [ ] Fix mobile background and compatibility
+- [x] Fix mobile background and compatibility
 
 - [ ] Expand fun stuff page
+
+- [ ] Broken up arrow link
