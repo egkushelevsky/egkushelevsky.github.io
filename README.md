@@ -8,4 +8,4 @@ My personal portfolio website. Made with React.js, Tailwind CSS, and Vite. See i
 
 - [ ] Expand fun stuff page
 
-- [ ] Broken up arrow link
+- [x] Broken up arrow link

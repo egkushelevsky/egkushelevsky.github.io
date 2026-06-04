@@ -7,7 +7,7 @@ export const Library = () => {
   const [selectedBook, setSelectedBook] = useState(null);
 
   return (
-    <section id="library" className="py-24 px-10 relative mt-[30px]">
+    <section id="home" className="py-24 px-10 relative mt-[30px]">
       <div className="min-h-screen flex flex-col items-center w-full max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-20 text-center hover:italic">
           Library
