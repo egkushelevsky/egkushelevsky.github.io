@@ -1,5 +1,33 @@
 [
   {
+      "title": "The Beautiful and Damned",
+      "author": "F. Scott Fitzgerald",
+      "editor": "",
+      "translator": "",
+      "image": "beautifulanddamned.png",
+      "published": 1922,
+      "completion_year": 2026,
+      "completion_month": 5,
+      "completion_day": 28,
+      "genre": "Fiction",
+      "rating": 2.5,
+      "description": "It took me genuinely two years to read this because I couldn’t get past the first part the first two times I tried. Anthony Patch is such a bore, and even if you’re supposed to feel some loathsome sympathy over his degenerate loaferism, you remember that he’s a reflection of the author and question how much larger than life his insufferability is. Gloria saves the second act by having at least *something* going for her, but Anthony’s undeserved auspice concludes the novel with straight frustration."
+  },
+  {
+      "title": "Martyr!",
+      "author": "Kaveh Akbar",
+      "editor": "",
+      "translator": "",
+      "image": "martyr.jpeg",
+      "published": 2024,
+      "completion_year": 2026,
+      "completion_month": 5,
+      "completion_day": 8,
+      "genre": "Fiction",
+      "rating": 4.5,
+      "description": "It feels like it’s been a long time since I’ve read a truly enjoyable book, and I think that shows in that I tore through this in a few days when books normally take me months. It makes up for any of its imperfections in wholehearted discovervy. Because I have the awareness of a pillbug while reading, the twist floored me, but even if I had recognized it ahead of time, I would applaud Akbar’s accretion toward a third-act triumph."
+  },
+  {
       "title": "Unfree Labor: American Slavery and Russian Serfdom",
       "author": "Peter Kolchin",
       "editor": "",
@@ -11,7 +39,7 @@
       "completion_day": 31,
       "genre": "History",
       "rating": 3.5,
-      "description": "My first foray into comparitive history. Though I found some of the distinctions between serfdom and slavery overreaching and others self-evident, I think my criticisms had more to do with the nature of the content than Kolchin's research. An altogether interesting accompaniment to my study of Russian history."
+      "description": "My first foray into comparitive history. Though I found some of the distinctions between serfdom and slavery overreaching and others self-evident, I think my criticisms had more to do with the nature of the content than Kolchin’s research. An altogether interesting accompaniment to my study of Russian history."
   },
   {
       "title": "The Paris Review Interviews, vol. 1",
@@ -25,7 +53,7 @@
       "completion_day": 28,
       "genre": "Reference",
       "rating": 4,
-      "description": "I mean, I'm unlikely to speak negatively of anything involving Joan Didion. It was so worthwhile to read the insights of these luminaries, some my idols, some new to me, all brilliant in their own voices. It's funny to read the interviews of these people and know exactly how they think, and even funnier to know how insufferable some of them must have been (looking at you, Truman Capote). Some of these interviewees—Borges, Billy Wilder, Didion of course—only grew in my perception after reading this. I'm lucky to have had this gifted to me."
+      "description": "I mean, I’m unlikely to speak negatively of anything involving Joan Didion. It was so worthwhile to read the insights of these luminaries, some my idols, some new to me, all brilliant in their own voices. It’s funny to read the interviews of these people and know exactly how they think, and even funnier to know how insufferable some of them must have been (looking at you, Truman Capote). Some of these interviewees—Borges, Billy Wilder, Didion of course—only grew in my perception after reading this. I’m lucky to have had this gifted to me."
   },
   {
     "title": "My Brilliant Friend",
@@ -39,7 +67,7 @@
     "completion_day": 2,
     "genre": "Fiction",
     "rating": 3.5,
-    "description": "I was quite excited for this book. I wouldn't say it met the high praise it recieves—I found the plot just as ambling as its pleonastic sentences. It's still a personal and touching read, but I should've known better than to pick a book with a review from Gwyneth Paltrow quoted on the cover."
+    "description": "I was quite excited for this book. I wouldn’t say it met the high praise it recieves—I found the plot just as ambling as its pleonastic sentences. It’s still a personal and touching read, but I should’ve known better than to pick a book with a review from Gwyneth Paltrow quoted on the cover."
   }, 
   {
     "title": "The Best American Short Stories 2025",
@@ -53,13 +81,13 @@
     "completion_day": 16,
     "genre": "Short stories, Fiction",
     "rating": 3,
-    "description": "While some of the stories in this edition were wholly worth the \"best\" moniker, others lead me to doubt Ng's curatorial abilities. My favorites were \"Seven Stories About Tammy\" by Elizabeth McCracken—an engrossing multiperspective anthology packed into a concise format—and \"Gray, Cotton, White Lace Edges\" by Isabelle Fang—a reflective, shocking feat. Others filled out the collection well: \"Aishwarya Rai\" by Sanjana Thakur and \"Third Room\" by Julian Robles were both perfectly enjoyable reads. But others lagged noticeably behind. I found the writing in \"Maritza and Carmen\" by Lyn di Iorio in dire need of an edit, and I didn't even finish the whole 15 pages of \"Time of the Preacher\" by Bret Anthony Johnston. I found the editor's inclusion of several stories referencing, directly or indirectly, the COVID-19 pandemic bizarrely out-of-touch. At its heart, this seems to be a poorly constructed collection, despite its standout talents."
+    "description": "While some of the stories in this edition were wholly worth the \"best\" moniker, others lead me to doubt Ng’s curatorial abilities. My favorites were \"Seven Stories About Tammy\" by Elizabeth McCracken—an engrossing multiperspective anthology packed into a concise format—and \"Gray, Cotton, White Lace Edges\" by Isabelle Fang—a reflective, shocking feat. Others filled out the collection well: \"Aishwarya Rai\" by Sanjana Thakur and \"Third Room\" by Julian Robles were both perfectly enjoyable reads. But others lagged noticeably behind. I found the writing in \"Maritza and Carmen\" by Lyn di Iorio in dire need of an edit, and I didn’t even finish the whole 15 pages of \"Time of the Preacher\" by Bret Anthony Johnston. I found the editor’s inclusion of several stories referencing, directly or indirectly, the COVID-19 pandemic bizarrely out-of-touch. At its heart, this seems to be a poorly constructed collection, despite its standout talents."
   }, 
   {
     "title": "The Woman Destroyed",
     "author": "Simone de Beauvoir",
     "editor": "",
-    "translator": "Patrick O'Brian",
+    "translator": "Patrick O’Brian",
     "image": "womandestroyed.jpeg",
     "published": 1967,
     "completion_year": 2026,
@@ -67,10 +95,10 @@
     "completion_day": 8,
     "genre": "Short stories, Fiction",
     "rating": 3,
-    "description": "A collection of three medium-length stories, all centered on women and their unhappy marriages. My favorite was the second, \"The Monologue,\" which is written as the rant of a woman separated from her husband and bereaved of her daughter. It's a poignant, inventive stream of consciousness, sometimes a bit hard to follow but nevertheless satisfactory. The place where I truly struggled was with the titular novella, which follows a woman obsessively clinging to her adulterous husband and going insane over the affair. Perhaps it's my modernist skew which de Beauvoir targets, but this was quite a frustrating read, to watch idly as Monique wastes away mere steps from the exit to her misery and her marriage. I also took issue with this translation; any copyeditor worth their salt should have caught the use of \"vexed\" every five pages (yes, I counted.)"
+    "description": "A collection of three medium-length stories, all centered on women and their unhappy marriages. My favorite was the second, \"The Monologue,\" which is written as the rant of a woman separated from her husband and bereaved of her daughter. It’s a poignant, inventive stream of consciousness, sometimes a bit hard to follow but nevertheless satisfactory. The place where I truly struggled was with the titular novella, which follows a woman obsessively clinging to her adulterous husband and going insane over the affair. Perhaps it’s my modernist skew which de Beauvoir targets, but this was quite a frustrating read, to watch idly as Monique wastes away mere steps from the exit to her misery and her marriage. I also took issue with this translation; any copyeditor worth their salt should have caught the use of \"vexed\" every five pages (yes, I counted.)"
   },
   {
-      "title": "Dreyer's English: An Utterly Correct Guide to Clarity and Style",
+      "title": "Dreyer’s English: An Utterly Correct Guide to Clarity and Style",
       "author": "Benjamin Dreyer",
       "editor": "",
       "translator": "",
