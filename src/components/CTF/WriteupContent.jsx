@@ -31,7 +31,7 @@ const SECTION_BOX =
   "bg-primary/20 p-6 outline-1 outline-primary rounded-lg shadow-xs text-left";
 // Nested box for fenced code blocks.
 const CODE_BOX =
-  "my-4 bg-primary/30 outline-1 outline-primary rounded-lg p-4 overflow-x-auto shadow-xs";
+  "my-4 bg-primary/30 outline-1 outline-primary rounded-lg overflow-x-auto shadow-xs";
 
 const components = (baseDir) => ({
   h1: ({ children }) => (
@@ -84,7 +84,7 @@ const components = (baseDir) => ({
   ),
   pre: ({ children }) => (
     <div className={CODE_BOX}>
-      <pre className="text-left text-sm">{children}</pre>
+      <pre className="text-left text-sm p-4 w-max min-w-full">{children}</pre>
     </div>
   ),
   code: ({ node, children, ...props }) => {

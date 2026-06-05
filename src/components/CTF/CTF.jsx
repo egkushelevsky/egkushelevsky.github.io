@@ -19,9 +19,13 @@ export const CTF = () => {
           {/* Mobile sidebar toggle */}
           <button
             onClick={() => setMobileOpen((p) => !p)}
-            className="md:hidden flex items-center gap-2 page-button self-start"
+            className={cn(
+              "md:hidden flex items-center gap-2 self-start px-5 py-3 rounded-full transition-colors duration-300 hover:italic",
+              mobileOpen
+                ? "bg-primary/20 text-primary-foreground hover:border hover:border-1 hover:border-primary"
+                : "bg-secondary/10 text-foreground border border-1 border-primary"
+            )}
           >
-            {mobileOpen ? <X size={18} /> : <Menu size={18} />}
             All Writeups
           </button>
 

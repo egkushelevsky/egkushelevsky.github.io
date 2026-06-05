@@ -29,7 +29,7 @@ export const Sidebar = ({ activeId, onNavigate }) => {
           <li key={ctf}>
             <button
               onClick={() => toggle(ctf)}
-              className="text-md w-full flex items-center gap-1 px-2 py-1 rounded hover:bg-primary/20 font-semibold"
+              className="w-full flex items-center gap-1 px-2 py-1 rounded hover:bg-primary/20 font-semibold"
             >
               <Caret open={!!expanded[ctf]} />
               <span className="truncate">{prettify(ctf)}</span>
@@ -43,7 +43,7 @@ export const Sidebar = ({ activeId, onNavigate }) => {
                     <li key={catKey}>
                       <button
                         onClick={() => toggle(catKey)}
-                        className="w-full flex items-center gap-1 px-2 py-1 rounded hover:bg-primary/20 tracking-wide text-xs"
+                        className="w-full flex items-center gap-1 px-2 py-1 rounded hover:bg-primary/20 tracking-wide"
                       >
                         <Caret open={!!expanded[catKey]} />
                         <span className="truncate">{category}</span>
@@ -58,8 +58,7 @@ export const Sidebar = ({ activeId, onNavigate }) => {
                                 onClick={onNavigate}
                                 className={cn(
                                   "block px-2 py-1 rounded hover:bg-primary/20 hover:italic truncate",
-                                  activeId === w.id &&
-                                    "bg-primary/30 font-semibold italic"
+                                  activeId === w.id && "bg-primary/30"
                                 )}
                               >
                                 {w.title}
