@@ -38,7 +38,7 @@ export const Books = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          An attempt to stick to my 2026 New Year's resolution of one non-academic book a month.
+          An attempt to stick to my 2026 New Year’s resolution of one non-academic book a month.
         </p>
 
         <div className="relative w-full">
