@@ -1,4 +1,4 @@
-import { Github, Mail } from "lucide-react";
+import { Github, Mail, Link } from "lucide-react";
 import snap from '../../assets/images/SNAP.png';
 import ctf from '../../assets/images/ctf.png';
 
@@ -8,14 +8,14 @@ const projects = [
         title: "CTF Writeups",
         description: "Ongoing collection of solved rev and pwn CTF challenges.",
         image: ctf,
-        url: "https://github.com/egkushelevsky/egkushelevsky-writeups"
+        link: "./ctf"
     },
     {
         id: 2,
         title: "SNAP for Students",
         description: "Hackathon project addressing food insecurity for college students. Includes a forum with other users, eligibility quiz, and AI chatbot.",
         image: snap,
-        url: "https://github.com/jaysonedu/devfest2025"
+        github: "https://github.com/jaysonedu/devfest2025"
     }
 ];
 
@@ -50,9 +50,9 @@ export const Projects = () => {
                             <p className="test-muted-foreground text-sm mb-4">{project.description}</p>
                             <div className="flex justify-between items-center">
                                 <div className="mt-auto flex space-x-3">
-                                    {project.url ? (
+                                    {project.github ? (
                                         <a
-                                        href={project.url}
+                                        href={project.github}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-foreground/80 hover:text-primary duration-300"
@@ -60,11 +60,31 @@ export const Projects = () => {
                                             <Github size={20} />
                                         </a>
                                         ) : (
+                                        <a>
+                                        </a>
+                                    )}
+                                    {project.link ? (
+                                        <a
+                                        href={project.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-foreground/80 hover:text-primary duration-300"
+                                        >
+                                            <Link size={20} />
+                                        </a>
+                                        ) : (
+                                        <a>
+                                        </a>
+                                    )}
+                                    {project.email ? (
                                         <a
                                         href="mailto:egkushelevsky@gmail.com"
                                         className="text-foreground/80 hover:text-primary duration-300"
                                         >
                                             <Mail size={20} />
+                                        </a>
+                                        ) : (
+                                        <a>
                                         </a>
                                     )}
                                 </div>
