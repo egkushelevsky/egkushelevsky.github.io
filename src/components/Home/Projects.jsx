@@ -8,7 +8,8 @@ const projects = [
         title: "CTF Writeups",
         description: "Ongoing collection of solved rev and pwn CTF challenges.",
         image: ctf,
-        link: "./ctf"
+        link: "./ctf",
+        github: "https://github.com/egkushelevsky/egkushelevsky-writeups"
     },
     {
         id: 2,
@@ -50,6 +51,18 @@ export const Projects = () => {
                             <p className="test-muted-foreground text-sm mb-4">{project.description}</p>
                             <div className="flex justify-between items-center">
                                 <div className="mt-auto flex space-x-3">
+                                    {project.link ? (
+                                        <a
+                                        href={project.link}
+                                        rel="noopener noreferrer"
+                                        className="text-foreground/80 hover:text-primary duration-300"
+                                        >
+                                            <Link size={20} />
+                                        </a>
+                                        ) : (
+                                        <a>
+                                        </a>
+                                    )}
                                     {project.github ? (
                                         <a
                                         href={project.github}
@@ -58,18 +71,6 @@ export const Projects = () => {
                                         className="text-foreground/80 hover:text-primary duration-300"
                                         >
                                             <Github size={20} />
-                                        </a>
-                                        ) : (
-                                        <a>
-                                        </a>
-                                    )}
-                                    {project.link ? (
-                                        <a
-                                        href={project.link}
-                                        rel="noopener noreferrer"
-                                        className="text-foreground/80 hover:text-primary duration-300"
-                                        >
-                                            <Link size={20} />
                                         </a>
                                         ) : (
                                         <a>
