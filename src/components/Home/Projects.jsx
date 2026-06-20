@@ -66,7 +66,6 @@ export const Projects = () => {
                                     {project.link ? (
                                         <a
                                         href={project.link}
-                                        target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-foreground/80 hover:text-primary duration-300"
                                         >

@@ -31,7 +31,7 @@ export const Books = () => {
   const booksToShow = sortedBooks.slice(0, Math.max(0, cardsThatFit - 1));
 
   return (
-    <section id="home" className="py-24 px-10 relative mt-[30px]">
+    <section id="top" className="py-24 px-10 relative mt-[30px]">
       <div className="min-h-screen flex flex-col items-center w-full overflow-x-hidden">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center hover:italic">
           Recent Reads

@@ -13,7 +13,7 @@ export const CTF = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <section className="w-full pt-28 pb-24 px-4">
+    <section id="top" className="w-full pt-28 pb-24 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col md:flex-row gap-8 items-start">
           {/* Mobile sidebar toggle */}

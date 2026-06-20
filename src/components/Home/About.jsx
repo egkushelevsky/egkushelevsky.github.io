@@ -2,7 +2,7 @@ import { FileUser, Linkedin } from "lucide-react"
 import ProfileImageUrl from "../../assets/images/profile.jpeg";
 
 export const About = () => {
-    return <section id="about" className="py-24 px-4 relative">
+    return <section id="top" className="py-24 px-4 relative">
         {""}
         <div className="container mx-auto max-w-5xl">
             <h2 className="text-3xl font-bold md:text-4xl mb-12 text-center hover:italic">
