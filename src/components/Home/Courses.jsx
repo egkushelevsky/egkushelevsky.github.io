@@ -20,7 +20,11 @@ const courses = [
     { name: "Making, Breaking Codes", code: "MATH-UN3025", year: 2025, sem: "Fall 2025"},
 
     { name: "Operating Systems", code: "COMS-W4118", year: 2026, sem: "Spring 2026"},
-    { name: "Machine Learning Security", code: "COMS-W4995", year: 2026, sem: "Spring 2026"}
+    { name: "Machine Learning Security", code: "COMS-W4995", year: 2026, sem: "Spring 2026"},
+
+    { name: "Programming Languages and Translators", code: "COMS-W4115", year: 2026, sem: "Fall 2026"},
+    { name: "Applied Cryptography", code: "COMS-BC3997", year: 2026, sem: "Fall 2026"},
+    { name: "Networks, Crowds, and the Web", code: "CSOR-W4223", year: 2026, sem: "Fall 2026"}
 ];
 
 const years = [2026, 2025, 2024, 2023];

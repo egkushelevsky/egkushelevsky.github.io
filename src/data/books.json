@@ -1,4 +1,60 @@
 [
+   {
+      "title": "A Ballet of Lepers",
+      "author": "Leonard Cohen",
+      "editor": "",
+      "translator": "",
+      "image": "aballetoflepers.jpg",
+      "published": 2022,
+      "completion_year": 2026,
+      "completion_month": 9,
+      "completion_day": 18,
+      "genre": "Fiction, Short Stories",
+      "rating": 2.5,
+      "description": "I wasn’t really sure what to expect of Cohen’s early ventures into writing as a big fan of his music, but I would not consider this a high point of his oeuvre. His typical lecherous style doesn’t land here as well as it does in a song, where plots can run loose; here, the title short story suffers from over-musing and doesn’t develop much. The play, too, was plain odd. I found a few of the short stories to be the most palatable. “Polly” in particular might make it into some anthology, but most everything else was a worthy sacrifice for Cohen’s musical career."
+  },
+  {
+      "title": "Native Son",
+      "author": "Richard Wright",
+      "editor": "",
+      "translator": "",
+      "image": "nativeson.jpg",
+      "published": 1940,
+      "completion_year": 2026,
+      "completion_month": 8,
+      "completion_day": 14,
+      "genre": "Fiction",
+      "rating": 5,
+      "description": "So difficult in the best way. Richard Wright is a fantastic writer who flawlessly conveys the heft of Bigger’s story."
+  },
+  {
+      "title": "Regeneration",
+      "author": "Pat Barker",
+      "editor": "",
+      "translator": "",
+      "image": "regeneration.jpeg",
+      "published": 1991,
+      "completion_year": 2026,
+      "completion_month": 7,
+      "completion_day": 30,
+      "genre": "Historical Fiction",
+      "rating": 3,
+      "description": "I found this a bit... lackluster? Perhaps it’s because I am so disconnected geographically and temporally from Barker’s original audience, but there wasn’t much of a plot to latch onto. Many of the chapters cycle through the same general format (one of the patients does something, then back to Rivers), which did not make for strong engagement as the novel progressed. It mostly felt like filler in a true story that didn’t need to become a novel."
+  },
+  {
+      "title": "Dune",
+      "author": "Frank Herbert",
+      "editor": "",
+      "translator": "",
+      "image": "dune.jpg",
+      "published": 1965,
+      "completion_year": 2026,
+      "completion_month": 7,
+      "completion_day": 10,
+      "genre": "Science Fiction, Fantasy",
+      "rating": 4,
+      "description": "I don’t often read science fiction, but what a treat it was. I really understood while reading the book more so than watching the movie how this became the blueprint for all science fiction literature that followed. In my opinion, it dragged a bit in the third act, but not so terribly as to mar my impression of Herbert and the series."
+  },
   {
       "title": "Brave New World",
       "author": "Aldous Huxley",
@@ -10,7 +66,7 @@
       "completion_month": 6,
       "completion_day": 9,
       "genre": "Fiction",
-      "rating": 2.5,
+      "rating": 4,
       "description": "“‘The right to grow old and ugly and impotent; the right to have syphilis and cancer; the right to have too little to eat; the right to be lousy; the right to live in constant apprehension of what may happen tomorrow; the right to catch typhoid; the right to be tortured by unspeakable pains of every kind.’ There was a long silence.\n‘I claim them all,’ said the Savage at last.”\nA lovely read. I wish there’d been a slightly stronger arc for Lenina and Bernard but I understand why there wasn’t. Definitely interesting to read with my knowledge of the USSR."
   },
   {
@@ -60,7 +116,7 @@
       "author": "",
       "editor": "Multi",
       "translator": "",
-      "image": "parisreview.avif",
+      "image": "parisreview.jpg",
       "published": 2006,
       "completion_year": 2026,
       "completion_month": 2,

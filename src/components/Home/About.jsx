@@ -11,12 +11,12 @@ export const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
                 <div>
                     <p className="text-lg md:text-lg text-muted-foreground max-w-2xl mx-auto">
-                    I am a rising senior at Barnard College of Columbia University graduating in fall 2026. I am studying 
+                    I am a senior at Barnard College of Columbia University graduating in fall 2026. I am studying 
                     computer science with a minor in Russian. I’m primarily interested in software security and systems. 
                     My goal is always to create a positive impact on other people through my work.
                     <br />
                     <br />            
-                    For summer 2026, I am returning to <a 
+                    For summer 2026, I interned at <a 
                                 href="https://www.thehealthcolab.com/" className="hover:italic"
                                 >The Health Co-Lab</a>, a startup working with community-based healthcare organizations, as 
                                 a cybersecurity intern.
