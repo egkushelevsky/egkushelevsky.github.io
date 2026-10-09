@@ -5,6 +5,7 @@ import { NotFound } from "./pages/NotFound"
 import { Resume } from "./pages/Resume";
 import { Library } from "./pages/Library";
 import { CTF } from "./pages/CTF";
+import { Blog } from "./pages/Blog";
 
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
           <Route path="ctf" element={<CTF />} />
           <Route path="ctf/:ctf/:category/:challenge" element={<CTF />} />
           <Route path="ctf/*" element={<Navigate to="/ctf" replace />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="blog/:slug" element={<Blog />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>

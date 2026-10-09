@@ -33,7 +33,7 @@ const SECTION_BOX =
 const CODE_BOX =
   "my-4 bg-primary/30 outline-1 outline-primary rounded-lg overflow-x-auto shadow-xs";
 
-const components = (baseDir) => ({
+export const components = (baseDir) => ({
   h1: ({ children }) => (
     <h1 className="text-2xl md:text-3xl font-bold mb-2">{children}</h1>
   ),
