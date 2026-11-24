@@ -13,18 +13,29 @@ const rawFiles = import.meta.glob("../writeups/**/*writeup.md", {
   eager: true,
 });
 
-/* Bundled URLs for every image inside the writeups tree, so relative image
+/* Bundled URLs for every image/audio asset inside the writeups tree, so relative
    references resolve to a real built asset */
-const imageFiles = import.meta.glob(
-  "../writeups/**/*.{png,jpg,jpeg,gif,webp,avif,svg}",
+const assetFiles = import.meta.glob(
+  "../writeups/**/*.{png,jpg,jpeg,gif,webp,avif,svg,wav,mp3,ogg,m4a,flac}",
   { query: "?url", import: "default", eager: true }
 );
 
-// Map of normalized image path ("ctf/category/challenge/img.png") -> built URL
-const imagesByPath = {};
-for (const [key, url] of Object.entries(imageFiles)) {
-  imagesByPath[key.slice(PREFIX.length)] = url;
+// Map of normalized asset paths to built URLs
+const assetsByPath = {};
+for (const [key, url] of Object.entries(assetFiles)) {
+  assetsByPath[key.slice(PREFIX.length)] = url;
 }
+
+/* Given a writeup's dir and a relative src/href, return a usable URL. Absolute
+   URLs pass through unchanged; relative ones are mapped to the bundled asset */
+export function resolveAsset(baseDir, src) {
+  if (!src) return src;
+  if (/^(https?:)?\/\//.test(src) || src.startsWith("data:")) return src;
+  const resolved = resolveRelative(baseDir, src.replace(/^\.?\//, ""));
+  return assetsByPath[resolved] ?? src;
+}
+
+export const resolveImage = resolveAsset;
 
 const prettify = (slug) =>
   slug
@@ -73,15 +84,6 @@ function resolveRelative(baseDir, rel) {
     else stack.push(part);
   }
   return stack.join("/");
-}
-
-/* Given a writeup's dir and an <img src>, return a usable URL. Absolute URLs
-   pass through unchanged; relative ones are mapped to the bundled asset */
-export function resolveImage(baseDir, src) {
-  if (!src) return src;
-  if (/^(https?:)?\/\//.test(src) || src.startsWith("data:")) return src;
-  const resolved = resolveRelative(baseDir, src.replace(/^\.?\//, ""));
-  return imagesByPath[resolved] ?? src;
 }
 
 export { prettify };

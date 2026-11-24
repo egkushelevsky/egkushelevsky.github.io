@@ -1,6 +1,8 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { resolveImage } from "@/lib/writeups";
+import { resolveImage, resolveAsset } from "@/lib/writeups";
+
+const AUDIO_RE = /\.(wav|mp3|ogg|m4a|flac)(\?.*)?$/i;
 
 // Split markdown into sections, each starting at a Markdown heading and running
 // until the next heading. Headings inside fenced code blocks are ignored so a
@@ -52,16 +54,33 @@ export const components = (baseDir) => ({
     <ol className="list-decimal list-inside my-3 space-y-1">{children}</ol>
   ),
   li: ({ children }) => <li className="leading-relaxed">{children}</li>,
-  a: ({ href, children }) => (
-    <a
-      href={href}
-      target="_blank"
-      rel="noreferrer"
-      className="underline hover:italic"
-    >
-      {children}
-    </a>
-  ),
+  a: ({ href, children }) => {
+    // Relative links to audio files render as an inline player; on GitHub the
+    // same Markdown stays a plain link to the file.
+    if (href && AUDIO_RE.test(href) && !/^(https?:)?\/\//.test(href)) {
+      return (
+        <span className="block my-4 p-3 rounded-lg outline-1 outline-primary">
+          <span className="block font-semibold mb-2">{children}</span>
+          <audio
+            controls
+            preload="metadata"
+            src={resolveAsset(baseDir, href)}
+            className="w-full"
+          />
+        </span>
+      );
+    }
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noreferrer"
+        className="underline hover:italic"
+      >
+        {children}
+      </a>
+    );
+  },
   img: ({ src, alt }) => (
     <img
       src={resolveImage(baseDir, src)}
